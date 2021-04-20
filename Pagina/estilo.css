@@ -1,0 +1,81 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+.centrado {
+    text-align: center;
+}
+.navegacion{
+    width: 1000px;
+    margin: 30px auto;   
+}
+.navegacion ul{
+    list-style-type: none;
+}
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+.menu li a :hover{
+    color: aliceblue;
+    transition: all .3s;
+}
+.submenu{
+    position: absolute;
+    background-color: black;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: blanchedalmond;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+.menu li :hover .submenu{
+    visibility: visible;
+    opacity: 1;
+
+}
+.SearchDiv{
+    text-align:right;
+   }
+   .btn-custom-primary {
+    background-color: black;
+    color:white;
+}
+
+
+h1{
+    color: tomato;
+}
+h5{
+    color:black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+h6{
+    border-style: solid double;
+}
+.busqueda{
+    text-align:center;
+}

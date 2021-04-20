@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   
+    <title>Hello, world!</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="row">
+            <div class="col-xs-12 col-sm-2">
+                <img src="1.png" width="150" height="100" alt="logo" >
+            </div>
+            <div class="col-xs-12 col-sm-8 centrado">
+                <h1>HIP-HOP</h1>
+                <h3> WUTANG CLAN</h3>
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                WUTANGCORP
+            </div>
+        </div>
+        <nav class="navegacion">
+          <ul class="menu">
+            <li><a href="../Pagina/index.html">Inicio</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Wu-Tang_Clan#Discograf%C3%ADa">Acerca de</a></li> 
+            <li><a href="">Iniciar sesión</li>
+          </ul>
+          </nav>
+      </header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <a class="navbar-brand" href="https://www.wutangcorp.com/forum/">WUTANG CORP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <ul>
+        <div class="SearchDiv">
+            <form id="searchForm" action="SearchController" method="post">
+                <input type="text" name="searchQuery" required /> <input
+                    type="submit" name="searchBtn" title="search" value="search">
+            </form>
+        </div>
+      </nav>
+      </ul>
+      <div class="container h-100">
+        <div class="row h-100 justify-content-center">
+            <div class="col-8 col-md-6 col-lg-4 ">
+                <div class="card shadow-lg">
+                    <div class="card-header"  >
+                        <h5>Autenticar</h5>
+                    </div> <!-- End header -->
+                     <!-- Form -->
+                     <form  method="post" accept-charset="utf-8" class="p-3" action="recibedatos.php" >
+                          <label for="username" class="sr-only">Usuario</label>
+                          <input type="text" id="username" name="username"  class="form-control m-2" placeholder="usuario" required autofocus>
+                          <label for="password" class="sr-only">Password</label>
+                          <input type="password" id="password" name="password" class="form-control m-2"  placeholder="Password" required>
+                          <div class="text-center">
+                             <button class="btn btn-custom-primary"  type="submit">Iniciar sesión</button>
+                          </div>
+                     </form>
+                    
+                     <div class="align-items-center alert alert-danger" id="divError"></div>
+                     <!-- End Form -->
+                </div> <!-- End ubj-card-primary -->
+            </div> <!--- End col-10 col-md-8 col-lg-6 -->
+        </div> <!-- End row h-100 -->
+    
+</body>
+</html>
